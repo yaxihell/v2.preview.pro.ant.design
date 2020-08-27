@@ -30,6 +30,12 @@ export default [
         icon: 'dashboard',
         component: './intro/index',
       },
+      {
+        path: '/demo',
+        name: 'DEMO',
+        icon: 'dashboard',
+        component: './demo/index',
+      },
       // forms
       {
         path: '/form',
