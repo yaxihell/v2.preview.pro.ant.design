@@ -78,13 +78,13 @@ export default {
   theme: {
     'primary-color': primaryColor,
   },
-  // proxy: {
-  //   '/server/api/': {
-  //     target: 'https://preview.pro.ant.design/',
-  //     changeOrigin: true,
-  //     pathRewrite: { '^/server': '' },
-  //   },
-  // },
+  proxy: {
+    '/data': {
+      target: 'http://localhost:3100/',
+      changeOrigin: true,
+      pathRewrite: { '^/data': '/data' },
+    },
+  },
   ignoreMomentLocale: true,
   lessLoaderOptions: {
     javascriptEnabled: true,
